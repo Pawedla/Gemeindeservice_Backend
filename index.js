@@ -22,4 +22,4 @@ app.use('/sitzungen', sitzungRoutes);
 app.use('/teilnehmer', teilnehmerRoutes);
 app.use('/beschluss', beschluesseRoutes);
  
-app.listen(5000, () => console.log('Server running at port 5000'));
+app.listen(process.env.PORT || 5000, () => console.log('Server running at port 5000'));
